@@ -1,9 +1,42 @@
+# Java基础编译文件（远程规则保留）
+*.class
+
+# 日志文件（远程规则保留）
+*.log
+
+# BlueJ文件（远程规则保留）
+*.ctxt
+
+# Mobile Tools for Java (J2ME)（远程规则保留）
+.mtj.tmp/
+
+# 包文件（远程规则保留，去重本地重复的*.jar/*.war/*.ear）
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# JVM崩溃日志（远程规则保留）
+hs_err_pid*
+replay_pid*
+
+# Maven相关（本地规则保留）
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+.mvn/
+mvnw
+mvnw.cmd
+.repository/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-### IntelliJ IDEA ###
+# IDE - IntelliJ IDEA（本地规则保留）
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
@@ -11,8 +44,10 @@ target/
 *.iws
 *.iml
 *.ipr
+.idea/
+out/
 
-### Eclipse ###
+# IDE - Eclipse（本地规则保留）
 .apt_generated
 .classpath
 .factorypath
@@ -21,34 +56,19 @@ target/
 .springBeans
 .sts4-cache
 
-### NetBeans ###
+# IDE - NetBeans（本地规则保留）
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+# IDE - VS Code（本地规则保留）
 .vscode/
 
-### Mac OS ###
+# 系统文件 - Mac OS（本地规则保留）
 .DS_Store
 
-######## Maven 专属忽略项 ########
-# Maven包装器（若项目有）
-.mvn/
-mvnw
-mvnw.cmd
-# 本地Maven仓库缓存（若存在）
-.repository/
-# 构建生成的临时文件
-*.jar
-*.war
-*.ear
-######## 补充系统文件忽略 ########
-# Windows系统文件
+# 系统文件 - Windows（本地规则保留）
 Thumbs.db
 Desktop.ini
